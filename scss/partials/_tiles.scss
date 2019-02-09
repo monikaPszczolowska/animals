@@ -1,0 +1,36 @@
+section.tiles {
+    display: flex;
+    flex-direction: column;
+
+    .flamingo,
+    .owl,
+    .wolf {
+        border-radius: 10px;
+        background-color: white;
+        margin-top: 30px;
+
+        img {
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        h3,
+        p {
+            padding: 10px 20px;
+        }
+    }
+}
+
+@media #{$desktop} {
+    section.tiles {
+        flex-direction: row;
+        justify-content: space-between;
+
+        .flamingo,
+        .owl,
+        .wolf {
+            flex-basis: 31%;
+        }
+    }
+}

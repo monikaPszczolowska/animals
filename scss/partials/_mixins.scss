@@ -1,0 +1,17 @@
+@mixin button($bg-color, $text-color) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 1em;
+    border-radius: 10px;
+    border-width: 0;
+    padding: 1rem;
+    margin-top: 1rem;
+    background-color: $bg-color;
+    color: $text-color;
+
+    span.fa {
+        padding: 0.5em;
+    }
+}

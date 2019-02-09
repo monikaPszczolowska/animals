@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E4E4E4;
+    background-image: url('/images/bg.png');
+    background-position: right top;
+    background-repeat: no-repeat;
+    color: #444;
+    font-family: 'Open sans', sans-serif;
+    padding: 10px;
+
+}
+
+@media #{$tablet} {
+    body {
+        background-color: lightseagreen;
+    }
+}
+
+@media #{$desktop} {
+    body {
+        background-color: pink;
+    }
+}
+
+
+.content {
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media #{$desktop} {
+    .content {
+        width: 960px;
+    }
+}

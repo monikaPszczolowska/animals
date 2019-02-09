@@ -1,0 +1,43 @@
+section.footer {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+
+    div.random {
+        padding: 30px;
+
+        p {
+            text-decoration: underline;
+        }
+    }
+
+    div.social {
+        padding: 30px;
+
+        .fab {
+            font-size: 2em;
+        }
+    }
+}
+
+@media #{$tablet} {
+    section.footer {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        div.random,
+        div.social {
+            flex-basis: 50%;
+            box-sizing: border-box;
+        }
+
+    }
+}
+
+@media #{$desktop} {
+    section.footer {
+        flex-wrap: nowrap;
+    }
+}

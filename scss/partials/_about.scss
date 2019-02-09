@@ -1,0 +1,50 @@
+section.about {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 1rem;
+    margin-top: 30px;
+    border-radius: 10px;
+
+    div.text,
+    div.interesting-stuff {
+        button {
+            margin-top: 20px;
+            @include button(#08857F, white)
+        }
+    }
+
+    .interesting-stuff {
+        .images {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+
+            img {
+                width: 50%;
+                height: 50%;
+                padding: 10px;
+                box-sizing: border-box;
+            }
+        }
+    }
+}
+
+@media #{$desktop} {
+    section.about {
+        flex-direction: row-reverse;
+
+        div.text,
+        div.interesting-stuff {
+            padding: 20px;
+
+            button {
+                width: 50%;
+            }
+        }
+
+
+    }
+}
