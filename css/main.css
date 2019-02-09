@@ -248,6 +248,12 @@ section.about {
   border-radius: 10px;
 }
 
+section.about div.text,
+section.about div.interesting-stuff {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
 section.about div.text button,
 section.about div.interesting-stuff button {
   margin-top: 20px;

@@ -9,6 +9,8 @@ section.about {
 
     div.text,
     div.interesting-stuff {
+        flex-basis: 50%;
+
         button {
             margin-top: 20px;
             @include button(#08857F, white)
